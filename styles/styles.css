@@ -91,7 +91,7 @@ section {
           transform: translateY(0) scale(1);
 }
 
-.controlls {
+.controls {
   position: fixed;
   z-index: 10;
   top: 50%;
@@ -113,17 +113,17 @@ section {
           transform: translateY(-50%);
 }
 
-.controlls .active-btn {
+.controls .active-btn {
   background-color: var(--color-secondary) !important;
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
 }
 
-.controlls .active-btn i {
+.controls .active-btn i {
   color: var(--color-white) !important;
 }
 
-.controlls .control {
+.controls .control {
   padding: 1rem;
   cursor: pointer;
   background-color: var(--color-gray4);
@@ -144,7 +144,7 @@ section {
           box-shadow: var(--box-shadow1);
 }
 
-.controlls .control i {
+.controls .control i {
   font-size: 1.3rem;
   color: var(--color-gray2);
   pointer-events: none;
