@@ -181,4 +181,9 @@ section {
   color: var(--color-gray2);
   pointer-events: none;
 }
+
+.hero {
+  width: 50%;
+  height: auto;
+}
 /*# sourceMappingURL=styles.css.map */
