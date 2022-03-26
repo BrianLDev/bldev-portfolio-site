@@ -9,10 +9,33 @@ function PageTransition() {
     sectBtn[i].addEventListener('click', () => {
       // change active-btn class
       let currentBtn = document.querySelectorAll('.active-btn');
-      currentBtn[0].classList = currentBtn[0].className.replace(' active-btn', '');
-      sectBtn[i].className += ' active-btn';
+      // currentBtn[0].classList = currentBtn[0].className.replace(' active-btn', '');
+      currentBtn[0].classList.remove('active-btn');
+      // sectBtn[i].className += ' active-btn';
+      sectBtn[i].classList.add('active-btn');
     });
   }
+
+  // make corresponding class active on click
+  mainContent.addEventListener('click', (e) => {
+    const id =  e.target.dataset.id;  // get data-id from clicked button
+    if (id) {
+      // remove selected from the other buttons
+      // sectBtns.forEach(btn => {
+      //   btn.classList.remove('active');
+      // });
+      // e.target.classList.add('active');
+
+      // hide other sections
+      sections.forEach(section => {
+        section.classList.remove('active');
+      });
+      // make current selection active
+      const element = document.getElementById(id);
+      element.classList.add('active');
+    }
+  })
+
 }
 
 PageTransition();
