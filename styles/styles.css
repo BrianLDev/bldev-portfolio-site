@@ -232,13 +232,13 @@ section {
      object-fit: cover;
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
-  -webkit-filter: sepia(70%);
-          filter: sepia(70%);
+  -webkit-filter: grayscale(70%) brightness(70%);
+          filter: grayscale(70%) brightness(70%);
 }
 
 .header-content .left-header .image img:hover {
-  -webkit-filter: sepia(0);
-          filter: sepia(0);
+  -webkit-filter: grayscale(0) brightness(100%);
+          filter: grayscale(0) brightness(100%);
 }
 
 .header-content .right-header {
